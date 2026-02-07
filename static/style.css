@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #fdfcff;
+    color: #333;
+    line-height: 1.9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    background-color: #cdb4db;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 85%;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(150, 100, 200, 0.2);
+}
+
+.card h2 {
+    color: #7b2cbf;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 30%;
+    min-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: Tahoma;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #9d4edd;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7b2cbf;
+}
+
+.comment {
+    background-color: #f3e8ff;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #5a189a;
+}
+
+footer {
+    background-color: #e9d8fd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
