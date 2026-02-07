@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import sqlite3
 from datetime import datetime
+import os  # اضافه کردن برای پورت
 
 app = Flask(__name__)
 
@@ -37,8 +38,13 @@ def index():
 
         return redirect("/")  # بعد ثبت، دوباره فرم خالی میشه
 
-    # اگر GET باشه فقط فرم نمایش داده میشه، نظرات تو صفحه اصلی دیده نمیشه
+    # GET → فرم نمایش داده میشه
     return render_template("index.html")
 
+# 🟢 تغییر اصلی برای Render
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(
+        host="0.0.0.0",  # مهم برای دسترسی عمومی
+        port=int(os.environ.get("PORT", 5000)),  # Render خودش پورت اختصاص میده
+        debug=True
+    )
