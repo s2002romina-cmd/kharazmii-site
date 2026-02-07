@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>غرفه خوارزمی</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+<img src="{{ url_for('static', filename='logo.PNG') }}" class="logo">
+    <div>
+        <h1>غرفه خوارزمی</h1>
+        <p>ارائه پروژه‌های علمی و پژوهشی دانش‌آموزان</p>
+    </div>
+</header>
+
+<main>
+
+<section class="card">
+    <h2>📌 معرفی غرفه</h2>
+    <p>
+        این غرفه به منظور معرفی یک پروژه علمی در جشنواره خوارزمی طراحی شده است.
+        هدف اصلی پروژه، تقویت مهارت‌های پژوهشی و خلاقیت دانش‌آموزان می‌باشد.
+    </p>
+</section>
+
+<section class="card">
+    <h2>🖼️ گالری تصاویر</h2>
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='images/img1.jpg') }}" alt="تصویر پروژه">
+        <img src="{{ url_for('static', filename='images/img2.jpg') }}" alt="تصویر پروژه">
+        <img src="{{ url_for('static', filename='images/img3.jpg') }}" alt="تصویر پروژه">
+    </div>
+</section>
+
+<section class="card">
+    <h2>📝 توضیحات پروژه</h2>
+    <p>
+        این پروژه شامل مراحل تحقیق، طراحی، اجرا و ارزیابی می‌باشد و
+        تلاش شده است بر اساس منابع علمی معتبر انجام شود.
+    </p>
+</section>
+
+<section class="card">
+    <h2>💬 ثبت نظر</h2>
+    <form method="POST">
+        <input type="text" name="name" placeholder="نام شما" required>
+        <textarea name="comment" placeholder="نظر خود را بنویسید" required></textarea>
+        <button type="submit">ثبت نظر</button>
+    </form>
+</section>
+
+
+</main>
+
+<footer>
+    <p>© غرفه خوارزمی – سال تحصیلی ۱۴۰۴–۱۴۰۵</p>
+</footer>
+
+</body>
+</html>
